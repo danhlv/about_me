@@ -749,3 +749,37 @@ to allow Flexbox to control their layout */
     min-width: 300px;
     max-width: 700px;
 }
+
+/* Ensure primary content containers are visible and styled correctly */
+.container {
+    display: block !important; /* Ensure it's not hidden */
+    width: 100%; /* Take full width available in its parent */
+    padding-right: 15px; /* Bootstrap default padding */
+    padding-left: 15px;  /* Bootstrap default padding */
+    margin-right: auto;  /* Center the container */
+    margin-left: auto;   /* Center the container */
+}
+
+.row {
+    display: flex !important; /* Enable flex for columns */
+    flex-wrap: wrap; /* Allow columns to wrap */
+    margin-right: -15px; /* Bootstrap default negative margins */
+    margin-left: -15px;  /* Bootstrap default negative margins */
+}
+
+.col-lg-8, .col-md-10 {
+    position: relative; /* For proper positioning contexts */
+    width: 100%; /* Take full width by default on smaller screens */
+    min-height: 1px; /* Ensure it has some height */
+    padding-right: 15px; /* Bootstrap default padding */
+    padding-left: 15px;  /* Bootstrap default padding */
+}
+
+/* Override Bootstrap's hidden classes if they're inadvertently applied */
+.hidden, .sr-only, [hidden] {
+    display: block !important; /* Force display for debugging if needed */
+    visibility: visible !important;
+    height: auto !important;
+    width: auto !important;
+    overflow: visible !important;
+}

@@ -706,10 +706,9 @@ td.gutter {
 
 /* Styles for the actual images inside the wrappers */
 .image-wrapper img {
-    max-width: 100%; /* Ensure images don't overflow their container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Slightly rounded corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex: 0 1 250px; /* THIS IS THE NEW LINE: Allows shrinking from 250px base */
+    width: 250px;    /* Keep the width for initial size */
+    text-align: center; /* Center the image if it's smaller than its wrapper */
 }
 
 /* Styles for the main text content block */

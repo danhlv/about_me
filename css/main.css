@@ -786,3 +786,7 @@ to allow Flexbox to control their layout */
     width: auto !important;
     overflow: visible !important;
 }
+
+.about-bio-content p {
+  text-align: center;
+}

@@ -689,13 +689,16 @@ td.gutter {
 
 /* The main container for the images and text */
 .about-container {
-    display: flex; /* Enable flexbox for flexible layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    /* REMOVE THIS LINE: justify-content: center; */
-    align-items: flex-start; /* Align items to the top vertically */
-    gap: 20px; /* Space between flex items */
-    padding: 20px 0; /* Add some vertical padding */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  /* distribute images and text evenly */
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* ✅ center the whole layout on the page */
 }
+
 
 /* Styles for the image wrappers (the div holding each image) */
 .image-wrapper {
@@ -713,17 +716,17 @@ td.gutter {
 
 /* Styles for the main text content block */
 .about-bio-content {
-    display: flex;               /* ✅ New: center content vertically and horizontally */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    min-width: 300px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+  flex: 1 1 500px;     /* ✅ allow it to grow and shrink nicely */
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.about-bio-content p {
+  text-align: center; /* ensures individual paragraphs are centered */
+}
+
 
 
 /* Responsive adjustments for smaller screens (media query) */

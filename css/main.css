@@ -717,6 +717,9 @@ td.gutter {
     flex-grow: 1; /* Allows the content to take up available space */
     min-width: 300px; /* Ensures content doesn't get too narrow before wrapping */
     max-width: 700px; /* Limits the max width of the text for readability */
+    margin-left: auto;   /* Centers the block within its available flex space */
+    margin-right: auto;  /* Centers the block within its available flex space */
+    
 }
 
 /* Responsive adjustments for smaller screens (media query) */

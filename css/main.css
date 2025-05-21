@@ -719,6 +719,7 @@ td.gutter {
     max-width: 700px; /* Limits the max width of the text for readability */
     margin-left: auto;   /* Centers the block within its available flex space */
     margin-right: auto;  /* Centers the block within its available flex space */
+    text-align: center;   /* THIS IS THE NEW LINE: Centers the text within the block */
     
 }
 

@@ -4,8 +4,27 @@ title: Resume
 use-site-title: true
 ---
 
-<div id="pdf" style="height: 800px;"></div>
-<script src="/js/pdfobject.min.js"></script>
-<script>
-PDFObject.embed("/static/pdf/Resume_Dan_2025.pdf", "#pdf");
-</script>
+<div class="resume-wrapper">
+    <iframe 
+        src="https://docs.google.com/gview?url=https://danhlv.github.io/static/pdf/Resume_Dan_2025.pdf&embedded=true" 
+        style="width:100%; height:850px; border: none;" 
+        frameborder="0"
+    ></iframe>
+</div>
+
+<style>
+/* Add some top/bottom padding to ensure the iframe isn't flush against other content */
+.resume-wrapper {
+    padding: 20px 0; 
+}
+
+/* You can adjust height as needed. 850px is a good starting point for common screens. */
+/* For responsiveness, you might consider media queries for smaller screens,
+   but Google Viewer generally handles its internal content well. */
+@media (max-width: 768px) {
+    .resume-wrapper iframe {
+        height: 100vh; /* Make it take up full viewport height on small screens */
+        padding-bottom: 20px; /* Add some padding if it's too snug */
+    }
+}
+</style>

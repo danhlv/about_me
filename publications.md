@@ -3,18 +3,18 @@ layout: page
 title: Publications
 ---
 
-You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+You can also browse my <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C3&q=dan+hlevca&btnG=" target="_blank">Google Scholar profile</a>.
 <br />
 
 **2024**
 
-- **Faster Speech-LLaMA inference with multi-token prediction**  
-  **Desh Raj**, Gil Keren, Junteng Jia, Jay Mahadeokar, Ozlem Kalinli  
-  *Submitted to IEEE ICASSP 2025*  
-  [Paper](https://arxiv.org/abs/2409.08148){: .btn} 
+- **Atmospheric Boundary Layer modeling in a short wind tunnel**  
+  **Dan Hlevca**, Mircea Degeratu  
+  *Europeean Journal of Mechanics-b/Fluids, 2020*  
+  [Paper](https://www.sciencedirect.com/science/article/pii/S0997754619301803?casa_token=Kz-xhOjh_3cAAAAA:QQaD_h0MqpaHnWHaYze0kjTrwU40MUiAdF-L12to-eW6z6gktX1_2Ui0uHxpjfqCkIP6bsSjgFc){: .btn} 
 
-- **M-BEST-RQ: A multi-channel speech foundation model for smart glasses**  
-  Yufeng Yang, **Desh Raj**, Ju Lin, Niko Moritz, Junteng Jia, Gil Keren, Egor Lakomkin, Yiteng Huang, Jacob Donley, Jay Mahadeokar, Ozlem Kalinli  
+- **Experimental study of the active control applied to the flow past a backward facing ramp**  
+  **Dan Hlevca**, Patrick Gilliéron, Francesco Grasso  
   *Submitted to IEEE ICASSP 2025*  
   [Paper](https://arxiv.org/abs/2409.11494){: .btn} 
 

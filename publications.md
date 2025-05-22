@@ -38,7 +38,7 @@ You can also browse my <a href="https://scholar.google.com/scholar?hl=en&as_sdt=
   *26th IAHR Symposium on Hydraulic Machinery and Systems, Tsinghua University, Beijing, China, 2012*  
   [Paper](https://iopscience.iop.org/article/10.1088/1755-1315/15/5/052005/pdf){: .btn}  
 
-  - **Device for passive flow control around vertical axis marine turbine**  
+- **Device for passive flow control around vertical axis marine turbine**  
   C I Coşoiu, A M Georgescu, M Degeratu, L Haşegan and **Dan Hlevca**  
   *26th IAHR Symposium on Hydraulic Machinery and Systems, Tsinghua University, Beijing, China, 2012*  
   [Paper](https://iopscience.iop.org/article/10.1088/1755-1315/15/6/062031/pdf){: .btn}  

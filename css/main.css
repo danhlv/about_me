@@ -790,3 +790,31 @@ to allow Flexbox to control their layout */
 .about-bio-content p {
   text-align: center;
 }
+
+/* --- Custom styles for centering text on the main page --- */
+
+/* Ensure the main site title and subtitle are centered in their header */
+.intro-header .page-heading,
+.intro-header .post-heading,
+.site-heading { /* Adding site-heading for good measure, as it's common */
+    text-align: center;
+}
+
+/* Center post titles and subtitles displayed on the main page list */
+.post-preview .post-title,
+.post-preview .post-subtitle {
+    text-align: center;
+}
+
+/* Crucial: Ensure the content columns inside .container go back to left-aligning text.
+   Your existing `text-align: center` on `.about-bio-content p` etc. is likely for
+   the about page itself and may be causing unintended centering on other pages.
+   This rule helps reset it for general content. */
+.container .row .col-lg-8,
+.container .row .col-md-10 {
+    text-align: left; /* Default text alignment for readability */
+}
+
+/* You have text-align: center on .about-bio-content and its p.
+   If this causes issues on other pages where this class isn't expected,
+   you might need to adjust its scope. For now, the above `col` rule should help. */

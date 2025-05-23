@@ -41,12 +41,12 @@ avatar: "/static/img/Dan_3.JPG"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: &#x00A9; Dan Hlevca
+  name: &copy; Dan Hlevca
   email: "dan.hlevca@gmail.com"
   github: danhlv    # eg. daattali
   linkedin: /dan-hlevca
   
-  
+
 
 # Select which links to show in the footer
 footer-links-active:

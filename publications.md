@@ -65,4 +65,4 @@ Congressional 2016 elections*.
 <br />  -->
 
 
-<b>Granted Patent:</b> Optimized Annular Housing for Horizontal Shaft Wind Turbines    --> <a href="[/referral](https://worldwide.espacenet.com/publicationDetails/biblio?CC=RO&NR=126772A0&KC=A0&FT=D#)">Europeean Patent Office</a>. 
+<b>Granted Patent:</b> Optimized Annular Housing for Horizontal Shaft Wind Turbines    --> <a (https://worldwide.espacenet.com/publicationDetails/biblio?CC=RO&NR=126772A0&KC=A0&FT=D#)">European Patent Office</a>. 

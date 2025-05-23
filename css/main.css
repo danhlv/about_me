@@ -856,3 +856,19 @@ to allow Flexbox to control their layout */
   border: 2px solid red;
 }
 
+/* Force centering of page heading block */
+.intro-header .page-heading {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 60px 20px;
+}
+
+.intro-header .page-heading h1,
+.intro-header .page-heading .page-subheading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+

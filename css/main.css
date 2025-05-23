@@ -818,3 +818,21 @@ to allow Flexbox to control their layout */
 /* You have text-align: center on .about-bio-content and its p.
    If this causes issues on other pages where this class isn't expected,
    you might need to adjust its scope. For now, the above `col` rule should help. */
+
+   /* Force center alignment of title and subtitle on the homepage */
+.intro-header .page-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-header .page-heading h1,
+.intro-header .page-heading .page-subheading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

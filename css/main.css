@@ -129,7 +129,7 @@ img {
   padding-top: 0;
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out; 
+  transition: padding .5s ease-in-out;  
 }
 .navbar-custom .navbar-brand-logo img {
   height: 50px;
@@ -508,9 +508,9 @@ footer .theme-by {
   }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
-  } 
+  }	
   .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading   {
+  .intro-header.big-img .post-heading  {
     padding: 150px 0;
   }  
   .intro-header .page-heading h1 {
@@ -602,7 +602,7 @@ footer .theme-by {
 }
 
 @media only screen and (min-width: 768px) {
-  .pager.blog-pager   {
+  .pager.blog-pager  {
     margin-top: 10px;
   }
 }
@@ -684,200 +684,3 @@ td.gutter {
 #social-share-section {
   margin-bottom: 30px;
 }
-
-/* --- Styles for About Page Images and Layout --- */
-
-/* The main container for the images and text */
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;  /* distribute images and text evenly */
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* ✅ center the whole layout on the page */
-}
-
-
-/* Styles for the image wrappers (the div holding each image) */
-.image-wrapper {
-    flex: 0 0 auto; /* Don't grow, don't shrink, base size is auto */
-    width: 250px; /* Default width for images (adjust as needed) */
-    text-align: center; /* Center the image if it's smaller than its wrapper */
-}
-
-/* Styles for the actual images inside the wrappers */
-.image-wrapper img {
-    flex: 0 1 250px; /* THIS IS THE NEW LINE: Allows shrinking from 250px base */
-    width: 250px;    /* Keep the width for initial size */
-    text-align: center; /* Center the image if it's smaller than its wrapper */
-}
-
-/* Styles for the main text content block */
-.about-bio-content {
-  flex: 1 1 500px;     /* ✅ allow it to grow and shrink nicely */
-  max-width: 700px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about-bio-content p {
-  text-align: center; /* ensures individual paragraphs are centered */
-}
-
-
-
-/* Responsive adjustments for smaller screens (media query) */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items when stacked */
-    }
-
-    .image-wrapper {
-        width: 80%; /* Images take up more width on smaller screens */
-        max-width: 300px; /* But don't get too big */
-    }
-}
-/* Ensure images within the about section do not float,
-to allow Flexbox to control their layout */
-.about-container .image-wrapper img {
-    float: none !important; /* Override any floating behavior */
-    display: block; /* Ensure it behaves as a block element */
-}
-
-/* Also, let's remove any floating from the image wrapper itself, if it exists */
-.about-container .image-wrapper {
-    float: none !important;
-}
-
-/* Ensure primary content containers are visible and styled correctly */
-.container {
-    display: block !important; /* Ensure it's not hidden */
-    width: 100%; /* Take full width available in its parent */
-    padding-right: 15px; /* Bootstrap default padding */
-    padding-left: 15px;  /* Bootstrap default padding */
-    margin-right: auto;  /* Center the container */
-    margin-left: auto;   /* Center the container */
-}
-
-.row {
-    display: flex !important; /* Enable flex for columns */
-    flex-wrap: wrap; /* Allow columns to wrap */
-    margin-right: -15px; /* Bootstrap default negative margins */
-    margin-left: -15px;  /* Bootstrap default negative margins */
-}
-
-.col-lg-8, .col-md-10 {
-    position: relative; /* For proper positioning contexts */
-    width: 100%; /* Take full width by default on smaller screens */
-    min-height: 1px; /* Ensure it has some height */
-    padding-right: 15px; /* Bootstrap default padding */
-    padding-left: 15px;  /* Bootstrap default padding */
-}
-
-/* Override Bootstrap's hidden classes if they're inadvertently applied */
-.hidden, .sr-only, [hidden] {
-    display: block !important; /* Force display for debugging if needed */
-    visibility: visible !important;
-    height: auto !important;
-    width: auto !important;
-    overflow: visible !important;
-}
-
-.about-bio-content p {
-  text-align: center;
-}
-
-/* --- Custom styles for centering text on the main page --- */
-
-/* Ensure the main site title and subtitle are centered in their header */
-.intro-header .page-heading,
-.intro-header .post-heading,
-.site-heading { /* Adding site-heading for good measure, as it's common */
-    text-align: center;
-}
-
-/* Center post titles and subtitles displayed on the main page list */
-.post-preview .post-title,
-.post-preview .post-subtitle {
-    text-align: center;
-}
-
-/* Crucial: Ensure the content columns inside .container go back to left-aligning text.
-   Your existing `text-align: center` on `.about-bio-content p` etc. is likely for
-   the about page itself and may be causing unintended centering on other pages.
-   This rule helps reset it for general content. */
-.container .row .col-lg-8,
-.container .row .col-md-10 {
-    text-align: left; /* Default text alignment for readability */
-}
-
-/* You have text-align: center on .about-bio-content and its p.
-   If this causes issues on other pages where this class isn't expected,
-   you might need to adjust its scope. For now, the above `col` rule should help. */
-
-   /* Force center alignment of title and subtitle on the homepage */
-.intro-header .page-heading {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.intro-header .page-heading h1,
-.intro-header .page-heading .page-subheading {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Force centering of homepage title + subtitle (robust override) */
-.intro-header .page-heading {
-  width: 100% !important;
-  text-align: center !important;
-  display: block !important;
-  margin: 0 auto !important;
-}
-
-.intro-header .page-heading h1,
-.intro-header .page-heading .page-subheading {
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.intro-header .page-heading {
-  border: 2px solid red;
-}
-
-/* Force centering of page heading block */
-.intro-header .page-heading {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  padding: 60px 20px;
-}
-
-.intro-header .page-heading h1,
-.intro-header .page-heading .page-subheading {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro-header .page-heading h1,
-.intro-header .page-heading .page-subheading {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center !important;
-  display: block;
-}
-
-

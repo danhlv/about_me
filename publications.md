@@ -67,4 +67,3 @@ Congressional 2016 elections*.
 
 
 <b>Granted Patent:</b> Optimized Annular Housing for Horizontal Shaft Wind Turbines    --> <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=RO&NR=126772A0&KC=A0&FT=D" target="_blank">View Patent RO126772A0 on Espacenet</a>.
-. 

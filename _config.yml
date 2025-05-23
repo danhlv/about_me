@@ -41,7 +41,7 @@ avatar: "/static/img/Dan_3.JPG"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Dan Hlevca
+  name: <p>&copy; 2025 Dan Hlevca. All rights reserved.</p>
   email: "dan.hlevca@gmail.com"
   github: danhlv    # eg. daattali
   linkedin: /dan-hlevca

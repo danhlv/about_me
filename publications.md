@@ -3,7 +3,8 @@ layout: page
 title: Publications
 ---
 
-You can also browse my <a href="https://scholar.google.com/citations?user=BOSjPlQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar profile</a>.
+You can also browse my <a href="https://scholar.google.com/citations?user=BOSjPlQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
+.
 <br />
 
 
@@ -65,4 +66,5 @@ Congressional 2016 elections*.
 <br />  -->
 
 
-<b>Granted Patent:</b> Optimized Annular Housing for Horizontal Shaft Wind Turbines    --> <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=RO&NR=126772A0&KC=A0&FT=D#" target="_blank">European Patent Office profile</a>. 
+<b>Granted Patent:</b> Optimized Annular Housing for Horizontal Shaft Wind Turbines    --> <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=RO&NR=126772A0&KC=A0&FT=D" target="_blank">View Patent RO126772A0 on Espacenet</a>.
+. 

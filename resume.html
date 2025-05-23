@@ -10,11 +10,20 @@ use-site-title: true
     width: 100%; /* Take full width of its parent column */
     /* Set a height that works well. Using vh (viewport height) makes it responsive,
        or you can use a fixed pixel height like 900px. */
-    min-height: 80vh; /* Minimum 80% of viewport height */
+    min-height: 85vh; /* Minimum 85% of viewport height */
     height: auto; /* Allow height to adjust if content fits within min-height */
-    overflow: hidden; /* Prevent external scrollbars if content is managed by PDF viewer */
+    /* Removed overflow: hidden; as we want horizontal scrolling if content is too wide */
     margin-top: 20px; /* Add some space from the top */
     margin-bottom: 20px; /* Add some space at the bottom */
+
+    /* IMPORTANT: Add horizontal scrolling if the content overflows */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on touch devices */
+
+    /* OPTIONAL: If content is still squished, try setting a minimum width here.
+       This will force the scrollbar if the screen is too small.
+       Adjust 900px based on what looks best for your PDF viewer. */
+    /* min-width: 900px; */
 }
 
 /* Style for the embedded object itself */

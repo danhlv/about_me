@@ -872,3 +872,11 @@ to allow Flexbox to control their layout */
   margin-right: auto;
 }
 
+.intro-header .page-heading h1,
+.intro-header .page-heading .page-subheading {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  display: block;
+}
+
